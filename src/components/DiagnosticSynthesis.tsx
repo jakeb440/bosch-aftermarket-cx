@@ -40,6 +40,19 @@ export function DiagnosticSynthesis({
           ))}
         </div>
 
+        {synthesis.regionalNarrative && (
+          <div className="grid md:grid-cols-2 gap-4">
+            <RegionalCard
+              region="europe"
+              narrative={synthesis.regionalNarrative.europe}
+            />
+            <RegionalCard
+              region="us"
+              narrative={synthesis.regionalNarrative.us}
+            />
+          </div>
+        )}
+
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="space-y-4">
             <h3 className="flex items-center gap-2 text-lg font-semibold text-emerald-800">
@@ -134,6 +147,38 @@ function SynthesisCard({
           </p>
         </div>
       )}
+    </div>
+  );
+}
+
+function RegionalCard({
+  region,
+  narrative,
+}: {
+  region: "europe" | "us";
+  narrative: string;
+}) {
+  const isEU = region === "europe";
+  return (
+    <div
+      className={cn(
+        "rounded-xl border p-5",
+        isEU
+          ? "border-blue-200 bg-blue-50/30"
+          : "border-rose-200 bg-rose-50/30"
+      )}
+    >
+      <h4 className="text-sm font-semibold text-text mb-2">
+        {isEU ? "🇪🇺 Europe" : "🇺🇸 United States"}
+      </h4>
+      {narrative.split("\n\n").map((p, i) => (
+        <p
+          key={i}
+          className="text-sm leading-relaxed text-text-secondary mb-2 last:mb-0"
+        >
+          {p}
+        </p>
+      ))}
     </div>
   );
 }

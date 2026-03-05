@@ -37,6 +37,18 @@
             "label": "Samsung 21st of 26 in Consumer Reports reliability — significant vulnerability",
             "type": "competitors-better"
           }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "Bosch is the market-leading brand in Europe; customers default to Bosch in categories like built-in dishwashers, particularly in Germany where penetration exceeds 70%",
+            "sentiment": "positive"
+          },
+          {
+            "region": "us",
+            "text": "Bosch is a premium challenger brand in the US, gaining market share through expanded Experience Centers and its first Big Game commercial, but competes against entrenched incumbents (Whirlpool, GE, Samsung, LG)",
+            "sentiment": "neutral"
+          }
         ]
       },
       {
@@ -64,6 +76,18 @@
           {
             "label": "Installation quality issues common across all brands at this price tier",
             "type": "industry-wide"
+          }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "Strong built-in appliance positioning in Europe — BSH gained market share in the built-in segment in Germany in 2024 despite overall market decline",
+            "sentiment": "positive"
+          },
+          {
+            "region": "us",
+            "text": "Premium pricing ($900-2,000+) positions Bosch above mass-market competitors but below Thermador/Gaggenau; retailer partnerships with Home Depot and Best Buy are primary sales channels",
+            "sentiment": "neutral"
           }
         ]
       },
@@ -109,6 +133,23 @@
             "label": "Smart appliance reliability issues affect all brands (JD Power 2025)",
             "type": "industry-wide"
           }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "Home Connect supports multi-brand BSH ecosystem (Bosch, Siemens, NEFF, Gaggenau) — European customers with multiple BSH appliances get a unified connected experience",
+            "sentiment": "positive"
+          },
+          {
+            "region": "europe",
+            "text": "Google Play reviews are notably lower in Europe (3.4/5 from 67.3K reviews) vs US (4.2/5 from 3.2K reviews), suggesting Android experience issues in the EU market",
+            "sentiment": "negative"
+          },
+          {
+            "region": "us",
+            "text": "Home Connect America competes against GE SmartHQ (AI-powered cooking, laundry, and stain recognition assistants) and Samsung SmartThings — US connected appliance market is more competitive",
+            "sentiment": "negative"
+          }
         ]
       },
       {
@@ -144,6 +185,18 @@
           {
             "label": "Proactive maintenance via connected appliances is nascent across all OEMs",
             "type": "industry-wide"
+          }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "EU ecodesign regulations and Right to Repair Directive 2024/1799 create a regulatory tailwind for aftermarket services — manufacturers must provide repair information, spare parts, and support consumer repair rights",
+            "sentiment": "positive"
+          },
+          {
+            "region": "us",
+            "text": "No federal right to repair framework for appliances — Bosch's maintenance and parts availability commitments are voluntary, not regulatory, leaving consumers with less protection",
+            "sentiment": "negative"
           }
         ]
       },
@@ -189,6 +242,23 @@
             "label": "25% global shortage of skilled appliance technicians affects all OEMs",
             "type": "industry-wide"
           }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "Bosch Home UK achieves 4.7/5 on Trustpilot (16,356 reviews) — in-house engineer network provides 7-day appointment availability, fixed £109-119 call-out charges, and 12-month repair guarantees. Engineers consistently praised as professional and knowledgeable",
+            "sentiment": "positive"
+          },
+          {
+            "region": "europe",
+            "text": "Service quality varies significantly within Europe — Germany (bosch-home.de) scores only 2.0/5 (322 reviews) and Denmark 1.6/5 (350 reviews), with complaints about long wait times and product defects shortly after purchase",
+            "sentiment": "negative"
+          },
+          {
+            "region": "us",
+            "text": "US repair experience is the weakest link — 1.6/5 on PissedConsumer (232 reviews) and 1.3/5 on Trustpilot. The systematic phone-to-technician warranty disconnect is primarily a US operational issue, where phone agents and field technicians operate from different coverage criteria",
+            "sentiment": "negative"
+          }
         ]
       },
       {
@@ -228,6 +298,23 @@
           {
             "label": "30-45 day OEM parts delays are an industry-wide challenge",
             "type": "industry-wide"
+          }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "Bosch commits to 15-year spare parts availability for large appliances manufactured after January 2023, driven by EU ecodesign mandates — a structural advantage for aftermarket revenue longevity",
+            "sentiment": "positive"
+          },
+          {
+            "region": "europe",
+            "text": "Right to Repair Directive requires manufacturers to charge reasonable prices for spare parts and provide repair information to independent repairers — expanding the service ecosystem",
+            "sentiment": "positive"
+          },
+          {
+            "region": "us",
+            "text": "No mandatory parts availability timeline — US customers report Bosch has discontinued parts (e.g., ice maker assemblies) for appliances still in service, with no alternative or replacement offered",
+            "sentiment": "negative"
           }
         ]
       },
@@ -273,6 +360,23 @@
             "label": "Miele's fixed-fee service model provides cost predictability that Bosch's variable-cost approach lacks",
             "type": "competitors-better"
           }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "EU Right to Repair Directive offers consumers a 12-month extension of legal guarantee if they choose repair over replacement — incentivizing repair and extending the aftermarket services window",
+            "sentiment": "positive"
+          },
+          {
+            "region": "europe",
+            "text": "EU legal guarantee is 2 years (vs Bosch's standard 12-month warranty) — European consumers have stronger baseline protection regardless of Bosch's warranty terms",
+            "sentiment": "neutral"
+          },
+          {
+            "region": "us",
+            "text": "US standard warranty is 12 months with narrow coverage — no regulatory floor beyond this. The $75 deductible for post-warranty service plan enrollment creates friction at the highest-intent purchase moment",
+            "sentiment": "negative"
+          }
         ]
       },
       {
@@ -301,12 +405,28 @@
             "label": "No major appliance OEM has a mature owner loyalty/upgrade program — whitespace opportunity",
             "type": "industry-wide"
           }
+        ],
+        "regionalInsights": [
+          {
+            "region": "europe",
+            "text": "Sustainability regulations and consumer preferences in Europe favor repair over replacement — the EU's circular economy framework supports aftermarket services growth over the dispose-and-replace model",
+            "sentiment": "positive"
+          },
+          {
+            "region": "us",
+            "text": "US market more oriented toward dispose-and-replace cycle; no structural incentives for repair over replacement. However, rising appliance prices are shifting some consumer behavior toward repair",
+            "sentiment": "neutral"
+          }
         ]
       }
     ]
   },
   "synthesis": {
     "narrative": "Bosch's domestic appliances business presents a striking paradox: the company leads in product satisfaction (JD Power #1 in dishwashers and wall ovens, Consumer Reports top scores) but severely underperforms in aftermarket service experience (1.6/5 PissedConsumer, 1.3/5 Trustpilot). This gap between product excellence and service frustration is the central finding of the diagnostic — and the central opportunity for aftermarket growth.\n\nThe aftermarket CX breakdown is concentrated in three areas: (1) warranty claims processing, where a systematic disconnect between phone support promises and technician execution destroys trust at the highest-stakes customer touchpoint; (2) repair scheduling and resolution, where 2+ week wait times and multi-visit repair cycles create extended downtime; and (3) parts availability, where discontinued components orphan still-serviceable appliances. These are not abstract complaints — they are the specific friction points that suppress service plan enrollment, erode repurchase intent, and leak aftermarket revenue to independent service providers.\n\nThe opportunity is substantial. McKinsey research shows aftermarket services typically generate ~20% of OEM revenue but ~50% of profits, with EBIT margins averaging 25% vs 10% for new equipment. Yet OEMs typically capture only 10-25% of their potential service revenue from their installed base. For BSH, with €15.3B in group turnover, even modest improvements in aftermarket capture rate represent hundreds of millions in high-margin revenue. The connected appliance installed base (Home Connect) provides the digital infrastructure to drive this — but today it's used primarily for maintenance reminders, not for the predictive service, proactive outreach, and frictionless service plan enrollment that would materially change the aftermarket revenue trajectory.\n\nGE Appliances' #1 ranking in the JD Power 2025 Reliability & Service Study — and their investment in AI-powered SmartHQ diagnostics — shows that service excellence is a winnable competitive position. The question for Bosch is whether the aftermarket growth ambition is matched by the operational investment required to close the gap between 'best dishwasher' and 'best service experience.'",
+    "regionalNarrative": {
+      "europe": "In Europe, Bosch operates from a position of market leadership — BSH is the #1 home appliance manufacturer on the continent, with particularly strong positioning in Germany's built-in segment. This installed base advantage, combined with the EU Right to Repair Directive (2024/1799) and ecodesign regulations mandating 15-year spare parts availability, creates a structural tailwind for aftermarket growth that doesn't exist in the US market.\n\nThe UK service operation demonstrates what's possible: 4.7/5 on Trustpilot with 16,356 reviews, powered by an in-house engineer network with 7-day appointment availability and fixed-price call-out charges. However, service quality is inconsistent across Europe — Germany (2.0/5) and Denmark (1.6/5) show significant gaps, suggesting the UK model hasn't been replicated across the continent. The European aftermarket opportunity is less about fixing a broken service experience and more about standardizing the UK's service excellence across all markets, while leveraging regulatory mandates (right to repair, parts availability, repair guarantee extensions) as competitive moats.\n\nHome Connect's multi-brand advantage in Europe (supporting Bosch, Siemens, NEFF, and Gaggenau from a single app) creates a unique ecosystem play — European households with multiple BSH appliances get consolidated connected services, increasing the digital surface area for aftermarket engagement. The challenge is the Android experience (3.4/5 Google Play vs 4.5/5 Apple), which risks alienating the majority of European smartphone users.",
+      "us": "In the US, Bosch is a premium challenger brand — gaining market share (up ~3% in 2024) but competing against deeply entrenched incumbents. GE Appliances ranks #1 in both reliability and service experience in JD Power 2025, setting a high competitive bar. Whirlpool dominates market share, and Samsung/LG have strong consumer brand awareness from their electronics businesses. Bosch's aftermarket challenge in the US is fundamentally different from Europe: it must build service credibility from a deficit position, not optimize from a position of strength.\n\nThe US service experience is the most urgent problem. The 1.6/5 PissedConsumer and 1.3/5 Trustpilot ratings reflect a systematic operational failure: phone agents promise warranty coverage that field technicians then deny, creating the single most damaging CX pattern in the entire journey. This isn't a perception problem — it's a process problem where phone support and field operations operate from different coverage criteria. Unlike Europe, there's no regulatory safety net (no right to repair, no mandatory parts availability), so when Bosch discontinues parts or denies a warranty claim, US consumers have no recourse beyond negative reviews.\n\nThe US aftermarket growth strategy must prioritize service experience repair before service revenue expansion. The Home Connect America app has strong ratings (4.5/5 Apple, 4.2/5 Google Play) but faces stiffer connected-appliance competition from GE SmartHQ (with AI-powered assistants) and Samsung SmartThings. The path to aftermarket growth in the US runs through operational credibility: fix the warranty claims process, match GE's service experience scores, and then leverage the premium brand position to attach higher-margin service plans."
+    },
     "topStrengths": [
       {
         "title": "Product satisfaction is category-leading in core segments — the installed base is a healthy foundation for aftermarket growth",

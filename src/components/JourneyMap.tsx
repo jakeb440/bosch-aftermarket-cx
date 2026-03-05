@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   AlertTriangle,
   Flag,
+  Globe,
 } from "lucide-react";
 import type { JourneyData, JourneyStage } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -295,6 +296,47 @@ function StageCard({ stage }: { stage: JourneyStage }) {
                     {ctx.label}
                   </span>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {stage.regionalInsights && stage.regionalInsights.length > 0 && (
+            <div className="md:col-span-2">
+              <h4 className="text-xs font-medium text-text-secondary uppercase tracking-wide mb-2 flex items-center gap-1.5">
+                <Globe className="w-3.5 h-3.5" />
+                Europe vs. U.S.
+              </h4>
+              <div className="grid md:grid-cols-2 gap-3">
+                {(["europe", "us"] as const).map((region) => {
+                  const items = stage.regionalInsights!.filter(
+                    (r) => r.region === region
+                  );
+                  if (items.length === 0) return null;
+                  return (
+                    <div key={region}>
+                      <p className="text-[10px] font-semibold uppercase tracking-wider text-text-muted mb-1.5">
+                        {region === "europe" ? "🇪🇺 Europe" : "🇺🇸 United States"}
+                      </p>
+                      <ul className="space-y-1.5">
+                        {items.map((insight, i) => (
+                          <li
+                            key={i}
+                            className={cn(
+                              "text-sm rounded-md px-3 py-2 border-l-2",
+                              insight.sentiment === "positive"
+                                ? "border-emerald-400 bg-emerald-50/40 text-text"
+                                : insight.sentiment === "negative"
+                                  ? "border-red-400 bg-red-50/40 text-text"
+                                  : "border-slate-300 bg-slate-50/40 text-text"
+                            )}
+                          >
+                            {insight.text}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}

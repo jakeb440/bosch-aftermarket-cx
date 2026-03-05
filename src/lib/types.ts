@@ -16,6 +16,12 @@ export interface JourneyData {
   stages: JourneyStage[];
 }
 
+export interface RegionalInsight {
+  region: "europe" | "us";
+  text: string;
+  sentiment: "positive" | "negative" | "neutral";
+}
+
 export interface JourneyStage {
   number: number;
   name: string;
@@ -33,10 +39,15 @@ export interface JourneyStage {
     label: string;
     type: "bosch-advantage" | "competitors-better" | "industry-wide";
   }[];
+  regionalInsights?: RegionalInsight[];
 }
 
 export interface SynthesisData {
   narrative: string;
+  regionalNarrative: {
+    europe: string;
+    us: string;
+  };
   topStrengths: {
     title: string;
     detail: string;
