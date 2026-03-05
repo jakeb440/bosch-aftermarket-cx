@@ -1,0 +1,420 @@
+{
+  "company": {
+    "name": "Bosch",
+    "sector": "Domestic Appliances (BSH Hausgeräte)",
+    "context": "€15.3B group turnover (2024) · #1 JD Power dishwashers & wall ovens · Home Connect ecosystem · Aftermarket growth focus"
+  },
+  "journey": {
+    "description": "Bosch — strengths and pain points across the domestic appliance customer journey, with emphasis on aftermarket services growth opportunities",
+    "stages": [
+      {
+        "number": 1,
+        "name": "Research & Discovery",
+        "description": "Consumer researches heavy appliances (dishwashers, washers, dryers, refrigerators, ovens) through online reviews, retailer sites, Consumer Reports, and word of mouth.",
+        "isAftermarket": false,
+        "strengths": [
+          {
+            "text": "Bosch ranks #1 in JD Power 2025 satisfaction for dishwashers (711) and wall ovens (749), creating strong pull-through from review sites and retailer recommendations — consumers actively seek Bosch for these categories",
+            "severity": "high"
+          },
+          {
+            "text": "Consumer Reports awards top scores to Bosch dishwashers — the Benchmark Series SHP9PCM5N scores 91/100 with 5/5 brand reliability — generating credible third-party endorsement during the research phase",
+            "severity": "high"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Bosch ranks 15th of 26 appliance brands in Consumer Reports' overall reliability rankings (Feb 2025), well behind LG (#2) and ahead of Samsung (#21) but trailing GE and Whirlpool — consumers researching cross-category reliability see a mixed picture",
+            "severity": "medium"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "Bosch #1 in JD Power dishwashers; GE #1 in overall reliability (JD Power 2025)",
+            "type": "bosch-advantage"
+          },
+          {
+            "label": "Samsung 21st of 26 in Consumer Reports reliability — significant vulnerability",
+            "type": "competitors-better"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "name": "Purchase & Installation",
+        "description": "Consumer purchases through Home Depot, Lowe's, Best Buy, or independent dealers. Delivery and installation scheduled through retailer or Bosch service network.",
+        "isAftermarket": false,
+        "strengths": [
+          {
+            "text": "Home Depot scores 700 in JD Power 2025 appliance retailer satisfaction (highest ranked), and Bosch's strong retailer partnerships ensure prominent shelf positioning and knowledgeable sales support for premium-priced products",
+            "severity": "medium"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Amazon reviewers report flimsy mounting brackets on Bosch dishwashers that fail to secure the unit — one reviewer noted 'the bracket is inadequate, I had to use wood shims' — creating a negative first impression at a premium price point",
+            "severity": "medium"
+          },
+          {
+            "text": "Plastic water line connectors on dishwashers are prone to cracking if over-tightened during installation, leading to leaks — multiple Amazon and Home Depot reviews cite this as a quality concern for a ~$900+ product",
+            "severity": "medium"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "Installation quality issues common across all brands at this price tier",
+            "type": "industry-wide"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "name": "Daily Use & Product Experience",
+        "description": "Consumer uses the appliance daily. Core satisfaction with cleaning performance, noise levels, features, and smart connectivity via the Home Connect app.",
+        "isAftermarket": false,
+        "strengths": [
+          {
+            "text": "Bosch dishwashers are consistently praised for exceptional quietness (as low as 42 dBA on 800 Series) and cleaning performance — long-term Amazon reviewers call them 'the best dishwasher I've ever owned'",
+            "severity": "high"
+          },
+          {
+            "text": "Home Connect app receives 4.5/5 on Apple App Store (16K ratings) and 4.2/5 on Google Play (3.2K reviews) — positive reviews praise door-open alerts, maintenance reminders, and appliance scheduling as genuinely useful connected features",
+            "severity": "medium"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Bosch 800 Series dishwasher third rack receives 'utterly useless' criticism for poor design — rack spacing makes efficient loading difficult. Controls located inside the door require opening it to check cycle status, a recurring ergonomic complaint",
+            "severity": "medium"
+          },
+          {
+            "text": "Home Connect app setup is confusingly complex — users report 'ERROR 5014' with no official troubleshooting, multiple button-press sequences on the appliance that are easy to execute incorrectly, and repeated resets required to establish connection",
+            "severity": "medium"
+          },
+          {
+            "text": "JD Power 2025 finds smart appliances with Wi-Fi/Bluetooth experience 87 problems per 100 units vs 63 for non-connected — Bosch's expanding Home Connect ecosystem inherits this industry-wide reliability tax on connected features",
+            "severity": "low"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "Bosch dishwasher noise levels and clean quality are category-leading",
+            "type": "bosch-advantage"
+          },
+          {
+            "label": "GE SmartHQ adding AI-powered assistants (coffee, laundry, cooking) — more advanced connected features than Home Connect",
+            "type": "competitors-better"
+          },
+          {
+            "label": "Smart appliance reliability issues affect all brands (JD Power 2025)",
+            "type": "industry-wide"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "name": "Maintenance & Care",
+        "description": "Routine maintenance: cleaning filters, descaling, replacing gaskets, running cleaning cycles. Proactive alerts and reminders via Home Connect.",
+        "isAftermarket": true,
+        "strengths": [
+          {
+            "text": "Bosch offers dedicated cleaners, descalers, and care products sold directly through bosch-home.com — a structured accessories and consumables revenue stream tied to the installed base",
+            "severity": "medium"
+          },
+          {
+            "text": "Home Connect app delivers maintenance reminders and usage-based alerts — positive user reviews cite these as 'genuinely useful' for extending appliance life, creating a digital touchpoint for aftermarket engagement",
+            "severity": "medium"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Bosch replaced physical owner's manuals with QR codes linking to videos — multiple reviewers express frustration that they cannot quickly reference maintenance instructions without scanning codes and navigating to online content",
+            "severity": "low"
+          },
+          {
+            "text": "No evidence of proactive, predictive maintenance notifications based on appliance telemetry — Home Connect monitors status but doesn't yet use data to predict failures or schedule preventive service automatically",
+            "severity": "medium"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "GE SmartHQ Service app provides diagnostic telemetry to technicians; more advanced predictive service capabilities",
+            "type": "competitors-better"
+          },
+          {
+            "label": "Proactive maintenance via connected appliances is nascent across all OEMs",
+            "type": "industry-wide"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "name": "Repair & Service",
+        "description": "When an appliance breaks down: contacting Bosch, scheduling a repair, technician visit, diagnosis, parts ordering, and resolution.",
+        "isAftermarket": true,
+        "strengths": [
+          {
+            "text": "Bosch promotes a 'one-visit repair' model — technicians arrive with genuine Bosch parts to resolve issues in a single appointment. Customer testimonials on bosch-home.com highlight quick phone responses and professional technicians",
+            "severity": "medium"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Bosch receives 1.6/5 stars on PissedConsumer (232 reviews) and 1.3/5 on Trustpilot — the most common complaint pattern is: phone support promises warranty coverage → technician arrives and denies the claim → customer pays full price for repair. One customer reported paying $864 for a glass top replacement after being told it would be covered",
+            "severity": "high"
+          },
+          {
+            "text": "Extended hold times on customer service calls that frequently result in disconnection without reaching a representative — multiple PissedConsumer and ComplaintsBoard reviews cite this as a primary frustration, especially when scheduling follow-up repair visits",
+            "severity": "high"
+          },
+          {
+            "text": "Communication breakdown between phone support and field technicians — customers are told one thing on the phone (coverage, timeline, parts availability) and experience a different reality when the technician arrives, eroding trust in the service chain",
+            "severity": "high"
+          },
+          {
+            "text": "Repair scheduling requires 2+ week wait times for follow-up visits when initial repair doesn't resolve the issue — one customer needed burner alignment after a glass top replacement and couldn't get a return visit for two weeks",
+            "severity": "medium"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "GE Appliances ranked #1 in service experience in JD Power 2025 Reliability & Service Study",
+            "type": "competitors-better"
+          },
+          {
+            "label": "Samsung service even worse — customers report 25-day waits, cancelled service tickets, and false repair forms (Samsung Community forums)",
+            "type": "bosch-advantage"
+          },
+          {
+            "label": "25% global shortage of skilled appliance technicians affects all OEMs",
+            "type": "industry-wide"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "name": "Parts & Accessories",
+        "description": "Finding, ordering, and receiving replacement parts. OEM parts availability, pricing, delivery times, and DIY vs professional installation.",
+        "isAftermarket": true,
+        "strengths": [
+          {
+            "text": "Bosch offers a structured parts portal on bosch-home.com where customers can search by model number (E-Nr) to view appliance diagrams and order authentic OEM parts — the self-service experience is more organized than most competitors",
+            "severity": "medium"
+          },
+          {
+            "text": "Dedicated phone support for parts (1-800-944-2904 for large appliances) with staff trained in parts identification — Bosch invests in helping customers find the right part rather than losing them to third-party parts suppliers",
+            "severity": "low"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Bosch has discontinued parts for some products still in service — multiple customers report that components like ice maker assemblies are simply 'no longer available' with no replacement or alternative offered, effectively orphaning working appliances",
+            "severity": "high"
+          },
+          {
+            "text": "Industry-wide OEM parts delays average 30-45 days according to market research — when Bosch doesn't stock a specific part, customers face extended appliance downtime with no loaner or interim solution offered",
+            "severity": "medium"
+          },
+          {
+            "text": "Returns process for damaged or incorrect parts requires calling within 10 days — not self-service online — adding friction to an already frustrating experience when the wrong part arrives",
+            "severity": "low"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "LG noted for strong parts availability and organized online parts ordering",
+            "type": "competitors-better"
+          },
+          {
+            "label": "30-45 day OEM parts delays are an industry-wide challenge",
+            "type": "industry-wide"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "name": "Warranty & Protection Plans",
+        "description": "Standard manufacturer warranty, extended Appliance Service Plan enrollment, claims processing, and coverage disputes.",
+        "isAftermarket": true,
+        "strengths": [
+          {
+            "text": "Bosch Appliance Service Plan offers flexible terms (1, 2, or 4 years) with compelling benefits: food loss coverage up to $300 for refrigerators, laundry cleaning service up to $50 if washer/dryer is out 7+ days, and FlexPay monthly installment options that lower the enrollment barrier",
+            "severity": "medium"
+          },
+          {
+            "text": "No deductible on the service plan if purchased during the manufacturer's warranty period — a smart incentive structure that encourages early enrollment when customer engagement is highest",
+            "severity": "medium"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Standard manufacturer warranty is only 12 months on most appliances — significantly shorter than consumer expectations for $900-2,000+ premium products. Competitors like Bosch's own refrigerator line offer extended component coverage (5 years on certain parts), but the baseline is perceived as inadequate",
+            "severity": "high"
+          },
+          {
+            "text": "Warranty coverage disputes are the #1 complaint theme on PissedConsumer and Amazon — customers describe a pattern of phone support initially confirming warranty coverage, then the claim being denied when the technician arrives or when formal documentation is reviewed. This broken handoff destroys trust at the most critical aftermarket touchpoint",
+            "severity": "high"
+          },
+          {
+            "text": "Warranty exclusions are broad: non-motor components (handles, baskets, shelves, drawers), cosmetic damage, rust/corrosion, and repairs by non-Bosch technicians are all excluded — customers discover these exclusions after the fact, leading to bitter surprise when their claim is denied",
+            "severity": "medium"
+          },
+          {
+            "text": "$75 deductible on service plan if purchased after warranty expires — creates a gap in the customer journey where the most motivated buyers (those who just experienced an out-of-warranty failure) face the highest friction to enroll",
+            "severity": "medium"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "Samsung Care+ and Whirlpool Extended Service Plans offer similar coverage tiers — no significant differentiation",
+            "type": "industry-wide"
+          },
+          {
+            "label": "Miele's fixed-fee service model provides cost predictability that Bosch's variable-cost approach lacks",
+            "type": "competitors-better"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "name": "Replacement & Upgrade",
+        "description": "End of appliance life: deciding to repair vs replace, brand loyalty at repurchase, trade-in or recycling programs, upgrade to connected models.",
+        "isAftermarket": false,
+        "strengths": [
+          {
+            "text": "JD Power 2025 shows Bosch leads in dishwasher and wall oven satisfaction — customers who own these categories are likely to repurchase. The 'best dishwasher I've ever owned' sentiment from long-term Amazon reviewers indicates strong loyalty in Bosch's core categories",
+            "severity": "high"
+          }
+        ],
+        "painPoints": [
+          {
+            "text": "Poor service experiences during stages 5-7 directly suppress repurchase intent — PissedConsumer and Trustpilot reviews frequently end with 'I will never buy Bosch again' after warranty disputes or failed repair experiences, converting product promoters into brand detractors at the repurchase moment",
+            "severity": "high"
+          },
+          {
+            "text": "No visible trade-in, recycling, or upgrade incentive program for existing Bosch owners — the replacement journey starts from scratch with no continuity from the previous ownership experience or data from Home Connect",
+            "severity": "medium"
+          }
+        ],
+        "competitiveContext": [
+          {
+            "label": "No major appliance OEM has a mature owner loyalty/upgrade program — whitespace opportunity",
+            "type": "industry-wide"
+          }
+        ]
+      }
+    ]
+  },
+  "synthesis": {
+    "narrative": "Bosch's domestic appliances business presents a striking paradox: the company leads in product satisfaction (JD Power #1 in dishwashers and wall ovens, Consumer Reports top scores) but severely underperforms in aftermarket service experience (1.6/5 PissedConsumer, 1.3/5 Trustpilot). This gap between product excellence and service frustration is the central finding of the diagnostic — and the central opportunity for aftermarket growth.\n\nThe aftermarket CX breakdown is concentrated in three areas: (1) warranty claims processing, where a systematic disconnect between phone support promises and technician execution destroys trust at the highest-stakes customer touchpoint; (2) repair scheduling and resolution, where 2+ week wait times and multi-visit repair cycles create extended downtime; and (3) parts availability, where discontinued components orphan still-serviceable appliances. These are not abstract complaints — they are the specific friction points that suppress service plan enrollment, erode repurchase intent, and leak aftermarket revenue to independent service providers.\n\nThe opportunity is substantial. McKinsey research shows aftermarket services typically generate ~20% of OEM revenue but ~50% of profits, with EBIT margins averaging 25% vs 10% for new equipment. Yet OEMs typically capture only 10-25% of their potential service revenue from their installed base. For BSH, with €15.3B in group turnover, even modest improvements in aftermarket capture rate represent hundreds of millions in high-margin revenue. The connected appliance installed base (Home Connect) provides the digital infrastructure to drive this — but today it's used primarily for maintenance reminders, not for the predictive service, proactive outreach, and frictionless service plan enrollment that would materially change the aftermarket revenue trajectory.\n\nGE Appliances' #1 ranking in the JD Power 2025 Reliability & Service Study — and their investment in AI-powered SmartHQ diagnostics — shows that service excellence is a winnable competitive position. The question for Bosch is whether the aftermarket growth ambition is matched by the operational investment required to close the gap between 'best dishwasher' and 'best service experience.'",
+    "topStrengths": [
+      {
+        "title": "Product satisfaction is category-leading in core segments — the installed base is a healthy foundation for aftermarket growth",
+        "detail": "Bosch ranks #1 in JD Power 2025 for dishwashers (711) and wall ovens (749), and Consumer Reports gives the Benchmark Series dishwasher 91/100 with 5/5 brand reliability. This matters for aftermarket because satisfied product owners are the most likely to purchase service plans, buy OEM parts, and remain in the Bosch service ecosystem — if the service experience doesn't drive them away. The product quality also supports premium pricing for service: customers who paid $900-2,000 for a Bosch appliance expect (and will pay for) premium aftermarket care. The strength to protect is this product-to-service bridge — every service failure on a premium product is disproportionately damaging to the aftermarket relationship."
+      },
+      {
+        "title": "Home Connect ecosystem provides a digital channel for aftermarket engagement — the infrastructure exists, it's undermonetized",
+        "detail": "With 4.5/5 on Apple App Store (16K ratings) and 4.2/5 on Google Play, Home Connect has achieved meaningful consumer adoption. Users praise maintenance reminders, door-open alerts, and scheduling features as genuinely useful. This is the digital foundation for aftermarket services growth: a connected appliance that's already in the customer's phone, already sending usage data, and already prompting maintenance actions. The gap is in what Home Connect doesn't yet do: predictive failure notifications, one-tap service scheduling, in-app parts ordering, service plan enrollment prompts triggered by appliance age or usage patterns, and proactive outreach when telemetry suggests an issue. GE's SmartHQ is moving faster on AI-powered diagnostics and service integration — Bosch has the installed base but not yet the aftermarket activation."
+      },
+      {
+        "title": "Bosch Appliance Service Plan has well-designed incentives — the product is good, the enrollment journey is the bottleneck",
+        "detail": "The service plan structure is competitive: flexible terms (1/2/4 years), food loss coverage ($300), laundry service during downtime ($50), FlexPay monthly payments, and a no-deductible incentive if purchased during warranty. These are smart features that address real consumer pain points. The issue isn't the plan design — it's that the enrollment moment is disconnected from the customer journey. The plan isn't surfaced in Home Connect, isn't presented at the point of sale with the same prominence as the product, and the $75 deductible for post-warranty purchase penalizes the exact moment when customers are most motivated to buy protection (right after an expensive out-of-warranty repair). Fixing the enrollment funnel — not the plan itself — is the highest-ROI aftermarket lever."
+      }
+    ],
+    "topOpportunities": [
+      {
+        "title": "Fix the warranty claims handoff — the phone-to-technician disconnect is the #1 aftermarket trust destroyer",
+        "detail": "The most consistent complaint pattern across PissedConsumer (1.6/5, 232 reviews), Amazon, and ComplaintsBoard is: customer calls Bosch → phone agent says the issue is covered under warranty → technician arrives and says it isn't → customer pays full price and vows to never buy Bosch again. This isn't a random failure — it's a systematic process breakdown where phone agents and field technicians operate from different coverage criteria, or where phone agents lack the authority/training to accurately assess coverage. The revenue impact is threefold: (1) direct service revenue lost to independent repair shops when customers bypass Bosch after one bad experience; (2) service plan enrollment suppressed because customers don't trust that Bosch will honor coverage; (3) repurchase intent destroyed at the most emotionally charged moment. A unified claims system — where the phone agent's coverage determination is binding and visible to the technician before arrival — would address the root cause."
+      },
+      {
+        "title": "Transform Home Connect from a monitoring tool into a service commerce platform — predictive service, parts ordering, and plan enrollment in-app",
+        "detail": "Home Connect currently sends maintenance reminders but stops short of enabling transactions. The aftermarket growth opportunity is to make Home Connect the primary service channel: (1) predictive alerts based on appliance telemetry ('Your dishwasher's spray arm motor is showing wear patterns — schedule preventive service before it fails'); (2) one-tap service booking with transparent pricing and real-time technician tracking; (3) in-app parts identification and ordering using the appliance's model data already in the app; (4) contextual service plan enrollment prompts triggered by appliance age, usage intensity, or proximity to warranty expiration. GE's SmartHQ Service already provides diagnostic telemetry to technicians and is adding AI-powered failure prediction — Bosch's Home Connect has comparable or better consumer adoption but lags in aftermarket activation. Each of these features converts a passive app user into an aftermarket revenue opportunity."
+      },
+      {
+        "title": "Capture the post-warranty enrollment moment — the $75 deductible penalty suppresses the highest-intent buyers",
+        "detail": "Bosch's service plan offers no deductible if purchased during the manufacturer's warranty, but applies a $75 deductible for post-warranty purchases. This creates a perverse incentive structure: customers who've just experienced an expensive out-of-warranty repair — the single moment when protection plan demand is highest — face additional cost friction that competitors don't always impose. The aftermarket growth play is to invert this: offer a time-limited 'second chance' enrollment at no deductible for customers who contact Bosch for their first post-warranty repair, paired with a Home Connect push notification at the 11-month mark ('Your warranty expires in 30 days — lock in protection with no deductible'). McKinsey research shows OEMs capture only 10-25% of potential aftermarket revenue from their installed base — improving service plan attach rates through frictionless enrollment at high-intent moments is one of the highest-margin growth levers available."
+      }
+    ]
+  },
+  "financial": {
+    "overview": "The home appliance aftermarket services market is valued at approximately $58.6 billion globally (2025), with projected growth to $75.6 billion by 2035. For OEMs, aftermarket services typically represent ~20% of revenue but ~50% of sector profits, with EBIT margins averaging 25% compared to ~10% for new equipment sales. Companies with strong aftermarket focus have achieved approximately 2x higher total shareholder returns over a 15-year period. Yet most OEMs capture only 10-25% of their potential aftermarket revenue from their installed base — representing a significant whitespace opportunity for BSH.",
+    "peerMetrics": [
+      {
+        "company": "BSH (Bosch/Siemens)",
+        "isTarget": true,
+        "aftermarketRevenueBn": 2.3,
+        "aftermarketPct": 15,
+        "serviceMarginPct": null,
+        "installedBaseM": 400,
+        "servicePlanAttachPct": null
+      },
+      {
+        "company": "Whirlpool",
+        "isTarget": false,
+        "aftermarketRevenueBn": 2.8,
+        "aftermarketPct": 17,
+        "serviceMarginPct": null,
+        "installedBaseM": 500,
+        "servicePlanAttachPct": null
+      },
+      {
+        "company": "Haier/GE Appliances",
+        "isTarget": false,
+        "aftermarketRevenueBn": 4.5,
+        "aftermarketPct": 18,
+        "serviceMarginPct": null,
+        "installedBaseM": 600,
+        "servicePlanAttachPct": null
+      },
+      {
+        "company": "Samsung (Home Appliances)",
+        "isTarget": false,
+        "aftermarketRevenueBn": 2.0,
+        "aftermarketPct": 12,
+        "serviceMarginPct": null,
+        "installedBaseM": 350,
+        "servicePlanAttachPct": null
+      },
+      {
+        "company": "LG (Home Appliances)",
+        "isTarget": false,
+        "aftermarketRevenueBn": 2.2,
+        "aftermarketPct": 14,
+        "serviceMarginPct": null,
+        "installedBaseM": 380,
+        "servicePlanAttachPct": null
+      },
+      {
+        "company": "Miele",
+        "isTarget": false,
+        "aftermarketRevenueBn": 1.0,
+        "aftermarketPct": 18,
+        "serviceMarginPct": null,
+        "installedBaseM": 80,
+        "servicePlanAttachPct": null
+      }
+    ],
+    "analystPerspectives": [
+      {
+        "quote": "Aftermarket services typically generate about 20% of revenues for industrial manufacturers, but account for approximately half of sector profits. Average EBIT margins for aftermarket services reach 25%, compared to only 10% for new equipment — some companies achieve margins up to four times higher than new unit sales.",
+        "source": "McKinsey & Company, 'Industrial aftermarket services: Growing the core' (2024)"
+      },
+      {
+        "quote": "Companies focusing heavily on aftermarket and service have achieved approximately 2× higher total shareholder returns compared to those with low service focus over a 15-year period. This performance advantage has been amplified by recent economic conditions, as budget-constrained customers prioritize aftermarket spending over new equipment investments.",
+        "source": "McKinsey & Company, 'Why aftermarket and service are vital to OEMs' (2024)"
+      },
+      {
+        "quote": "OEMs typically capture only 10-25% of their potential service revenue from their installed base. Companies that analyze 'aftermarket lifetime value' — the total revenue from servicing their installed base — often discover core services (parts, repair, maintenance) drive more growth than expected. One OEM found that 90% of near-term growth would come from core services.",
+        "source": "Bain & Company, 'Profit in Your Own Land: Expand Sales by Owning the Aftermarket'"
+      },
+      {
+        "quote": "The global home appliance repair and maintenance service market is valued at approximately $58.6 billion in 2025, projected to reach $75.6 billion by 2035. Growth is driven by increased appliance ownership, consumer preference for repair over replacement, and digital technology adoption including online booking platforms and predictive maintenance.",
+        "source": "Research and Markets / EconMarketResearch, 'Home Appliance Repair & Maintenance Service Market — Global Forecast 2025-2030'"
+      },
+      {
+        "quote": "A key structural challenge: the industry faces a 25% global shortage of skilled appliance technicians, while OEM spare parts delays average 30-45 days. These constraints make digital diagnostics, predictive maintenance, and first-visit resolution capabilities critical competitive differentiators for aftermarket service growth.",
+        "source": "IntelMarketResearch, 'Home Appliance Repair Service Market Growth Analysis 2026-2032'"
+      }
+    ]
+  }
+}

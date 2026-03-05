@@ -1,0 +1,325 @@
+"use client";
+
+import { useState } from "react";
+import {
+  MapPin,
+  ChevronDown,
+  ChevronUp,
+  CheckCircle2,
+  AlertTriangle,
+  Flag,
+} from "lucide-react";
+import type { JourneyData, JourneyStage } from "@/lib/types";
+import { cn } from "@/lib/utils";
+
+interface JourneyMapProps {
+  journey: JourneyData;
+  companyName: string;
+}
+
+const SEVERITY_COLORS = {
+  high: { strength: "bg-emerald-500", pain: "bg-red-500" },
+  medium: { strength: "bg-emerald-300", pain: "bg-red-300" },
+  low: { strength: "bg-emerald-200", pain: "bg-red-200" },
+};
+
+const CONTEXT_LABELS: Record<string, string> = {
+  "bosch-advantage": "Bosch advantage",
+  "competitors-better": "Competitors do better",
+  "industry-wide": "Industry-wide",
+};
+
+const CONTEXT_STYLES: Record<string, string> = {
+  "bosch-advantage": "bg-indigo-50 text-indigo-700 border border-indigo-200",
+  "competitors-better": "bg-amber-50 text-amber-700 border border-amber-200",
+  "industry-wide": "bg-slate-100 text-slate-600 border border-slate-200",
+};
+
+export function JourneyMap({ journey, companyName }: JourneyMapProps) {
+  const aftermarketStages = journey.stages.filter((s) => s.isAftermarket);
+  const firstAftermarket = aftermarketStages[0]?.number ?? -1;
+  const lastAftermarket =
+    aftermarketStages[aftermarketStages.length - 1]?.number ?? -1;
+
+  return (
+    <section className="bg-white rounded-xl border border-border shadow-sm">
+      <div className="px-6 py-5 border-b border-border">
+        <div className="flex items-center gap-2">
+          <MapPin className="w-5 h-5 text-primary" />
+          <h2 className="text-lg font-semibold text-text">
+            Customer Journey &amp; Aftermarket CX
+          </h2>
+        </div>
+        <p className="text-sm text-text-secondary mt-1">
+          {journey.description}
+        </p>
+      </div>
+
+      {/* Journey timeline rail */}
+      <div className="px-6 py-4 border-b border-border bg-surface-alt">
+        <div className="flex items-center gap-1 overflow-x-auto pb-1">
+          {journey.stages.map((stage, i) => {
+            const isFirst = stage.number === firstAftermarket;
+            const isLast = stage.number === lastAftermarket;
+            const isAM = stage.isAftermarket;
+
+            return (
+              <div key={stage.number} className="flex items-center shrink-0">
+                {isFirst && (
+                  <span className="mr-1 px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-primary/10 text-primary">
+                    Aftermarket
+                  </span>
+                )}
+                <div
+                  className={cn(
+                    "flex items-center gap-1.5 px-3 py-1.5 rounded-full border text-xs font-medium",
+                    isAM
+                      ? "bg-primary/5 border-primary/20 text-primary"
+                      : "bg-white border-border text-text-secondary"
+                  )}
+                >
+                  <span
+                    className={cn(
+                      "w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center",
+                      isAM
+                        ? "bg-primary/15 text-primary"
+                        : "bg-primary/10 text-primary"
+                    )}
+                  >
+                    {stage.number}
+                  </span>
+                  {stage.name}
+                </div>
+                {isLast && (
+                  <span className="ml-1 px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider bg-primary/10 text-primary">
+                    ▸
+                  </span>
+                )}
+                {i < journey.stages.length - 1 && (
+                  <div className="w-4 h-px bg-border mx-0.5" />
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Stage details */}
+      <div className="divide-y divide-border">
+        {journey.stages.map((stage) => (
+          <StageCard key={stage.number} stage={stage} />
+        ))}
+      </div>
+
+      {/* Legend */}
+      <div className="px-6 py-4 border-t border-border bg-surface-alt">
+        <div className="flex flex-wrap gap-6 text-xs text-text-secondary">
+          <div className="flex items-center gap-3">
+            <span className="font-medium text-text">Strengths:</span>
+            {(["high", "medium", "low"] as const).map((s) => (
+              <span key={s} className="flex items-center gap-1.5">
+                <span
+                  className={cn(
+                    "h-2.5 w-2.5 rounded-full",
+                    SEVERITY_COLORS[s].strength
+                  )}
+                />
+                {s}
+              </span>
+            ))}
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="font-medium text-text">Pain points:</span>
+            {(["high", "medium", "low"] as const).map((s) => (
+              <span key={s} className="flex items-center gap-1.5">
+                <span
+                  className={cn(
+                    "h-2.5 w-2.5 rounded-full",
+                    SEVERITY_COLORS[s].pain
+                  )}
+                />
+                {s}
+              </span>
+            ))}
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="font-medium text-text">Competitive context:</span>
+            {Object.entries(CONTEXT_LABELS).map(([key, label]) => (
+              <span key={key} className="flex items-center gap-1.5">
+                <span
+                  className={cn(
+                    "h-2.5 w-2.5 rounded-full",
+                    key === "bosch-advantage"
+                      ? "bg-indigo-400"
+                      : key === "competitors-better"
+                        ? "bg-amber-400"
+                        : "bg-slate-400"
+                  )}
+                />
+                {label}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function StageCard({ stage }: { stage: JourneyStage }) {
+  const [expanded, setExpanded] = useState(true);
+
+  const strengthCount = stage.strengths.length;
+  const painCount = stage.painPoints.length;
+
+  return (
+    <div className={cn("px-6 py-4", stage.isAftermarket && "bg-primary/[0.02]")}>
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="w-full flex items-center justify-between text-left group"
+      >
+        <div className="flex items-center gap-3">
+          <span
+            className={cn(
+              "w-7 h-7 rounded-full text-xs font-bold flex items-center justify-center",
+              stage.isAftermarket
+                ? "bg-primary/15 text-primary"
+                : "bg-primary/10 text-primary"
+            )}
+          >
+            {stage.number}
+          </span>
+          <div>
+            <div className="flex items-center gap-2">
+              <h3 className="text-sm font-semibold text-text group-hover:text-primary transition-colors">
+                {stage.name}
+              </h3>
+              {stage.isAftermarket && (
+                <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-primary/10 text-primary">
+                  Aftermarket
+                </span>
+              )}
+            </div>
+            <p className="text-xs text-text-muted mt-0.5">
+              {stage.description}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-3 shrink-0 ml-4">
+          {strengthCount > 0 && (
+            <span className="text-xs text-emerald-600 font-medium">
+              {strengthCount} strength{strengthCount !== 1 ? "s" : ""}
+            </span>
+          )}
+          {painCount > 0 && (
+            <span className="text-xs text-red-600 font-medium">
+              {painCount} pain point{painCount !== 1 ? "s" : ""}
+            </span>
+          )}
+          {expanded ? (
+            <ChevronUp className="w-4 h-4 text-text-muted" />
+          ) : (
+            <ChevronDown className="w-4 h-4 text-text-muted" />
+          )}
+        </div>
+      </button>
+
+      {expanded && (
+        <div className="mt-4 grid md:grid-cols-2 gap-4 pl-10">
+          <div>
+            <h4 className="text-xs font-medium text-emerald-700 uppercase tracking-wide mb-2 flex items-center gap-1.5">
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              Strengths
+            </h4>
+            <ul className="space-y-2">
+              {stage.strengths.map((s, i) => (
+                <li
+                  key={i}
+                  className={cn(
+                    "text-sm text-text rounded-md px-3 py-2 border-l-2",
+                    severityBorder(s.severity, "positive")
+                  )}
+                >
+                  {s.text}
+                </li>
+              ))}
+              {stage.strengths.length === 0 && (
+                <li className="text-xs text-text-muted italic">
+                  No notable strengths identified
+                </li>
+              )}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xs font-medium text-red-700 uppercase tracking-wide mb-2 flex items-center gap-1.5">
+              <AlertTriangle className="w-3.5 h-3.5" />
+              Pain Points
+            </h4>
+            <ul className="space-y-2">
+              {stage.painPoints.map((p, i) => (
+                <li
+                  key={i}
+                  className={cn(
+                    "text-sm text-text rounded-md px-3 py-2 border-l-2",
+                    severityBorder(p.severity, "negative")
+                  )}
+                >
+                  {p.text}
+                </li>
+              ))}
+              {stage.painPoints.length === 0 && (
+                <li className="text-xs text-text-muted italic">
+                  No notable pain points identified
+                </li>
+              )}
+            </ul>
+          </div>
+
+          {stage.competitiveContext && stage.competitiveContext.length > 0 && (
+            <div className="md:col-span-2">
+              <h4 className="text-xs font-medium text-text-secondary uppercase tracking-wide mb-2 flex items-center gap-1.5">
+                <Flag className="w-3.5 h-3.5" />
+                Competitive Context
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {stage.competitiveContext.map((ctx, i) => (
+                  <span
+                    key={i}
+                    className={cn(
+                      "inline-flex items-center text-xs px-2.5 py-1 rounded-full font-medium",
+                      CONTEXT_STYLES[ctx.type] ??
+                        CONTEXT_STYLES["industry-wide"]
+                    )}
+                  >
+                    {ctx.label}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function severityBorder(
+  severity: "high" | "medium" | "low",
+  tone: "positive" | "negative"
+): string {
+  if (tone === "positive") {
+    const map: Record<string, string> = {
+      high: "border-emerald-500 bg-emerald-50/50",
+      medium: "border-emerald-300 bg-emerald-50/30",
+      low: "border-emerald-200 bg-emerald-50/20",
+    };
+    return map[severity] ?? map.medium;
+  }
+  const map: Record<string, string> = {
+    high: "border-red-500 bg-red-50/50",
+    medium: "border-red-300 bg-red-50/30",
+    low: "border-red-200 bg-red-50/20",
+  };
+  return map[severity] ?? map.medium;
+}
